@@ -21,9 +21,19 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
-
+```python
+class Demo:
+    def __init__(self):
+        self.status = "Alive"
+        print(self.status)
+    def __del__(self):
+        print("Object is being destroyed")
+obj = Demo()
+del obj
+```
 ## 🧪 Output
 
-## Result
+<img width="543" height="172" alt="image" src="https://github.com/user-attachments/assets/4e8d3004-474f-4f1f-a758-1c291797f9d0" />
 
+## Result
+Thus, the Python program was successfully executed to demonstrate the use of a destructor using the **del**() method.
